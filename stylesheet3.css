@@ -1,0 +1,179 @@
+body{
+    background: linear-gradient(pink, purple);
+    background-image:url("images/background-image-2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: center space-evenly;
+    column-gap: 8em;
+    row-gap: 2em;
+    padding-top: 150px;
+
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+}
+
+.calendarContainer{
+    padding-top: 20px;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendar{
+    width: 760px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10 px black;
+}
+
+.header{
+    font-family: "press Start 2P";
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border-radius: 15px;
+}
+
+.monthYear {
+    font-family: "press Start 2P";
+    text-align: center;
+    font-weight: 600;
+    width: 150px;
+}
+.header button{
+    font-family: "press Start 2P";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 0 4px black;
+}
+
+.days{
+    font-family: "press Start 2P";
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
+
+.day{
+    font-family: "press Start 2P";
+    text-align: center;
+    padding: 5px;
+    color: #999FA6;
+    font-weight: 500;
+}
+
+.dates{
+    font-family: "press Start 2P";
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.date {
+    font-family: "press Start 2P";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    transition: 0.2s;
+}
+
+.date:hover,
+.date:active{
+    background: #800020;
+    color: white;
+}
+
+.date.inactive{
+    color: #d2d2d2;
+}
+
+.date.inactive:hover{
+    color: #fff;
+}
+#box1{
+    align-self: center;
+}
+
+#box2{
+    align-self: center;
+}
+
+#box3{
+    align-self: center;
+}
+
+#box4{
+    align-self: center;
+}
+
+#box5{
+    align-self: flex-start;
+}
+
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.padditems{
+    padding-top: 10px;
+}
+
+h1{
+    color: red;
+    /* font properties */
+    font-family: "press Start 2P","consolas";
+    font-size: 75px;
+    text-align: center;
+    /*Text shadow*/
+    text-shadow: 2px 2px 10px #800020;
+    /*Border styling*/
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+}
+
+p{
+    /* background-color: pink; */
+    border-radius: 10px;
+    /* color: #800020; */
+    color: white;
+    text-shadow: 5px 5px 10px  rgb(255, 0, 85);
+    font-family: "press Start 2P","consolas";
+    font-size:35px;
+}
