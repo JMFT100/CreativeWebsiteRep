@@ -177,3 +177,40 @@ p{
     font-family: "press Start 2P","consolas";
     font-size:35px;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 8vw; /* scales with screen instead of fixed 75px */
+  }
+
+  p {
+    font-size: 5vw;
+  }
+
+  button {
+    width: 90%;
+    max-width: 250px;
+    height: auto;
+    padding: 15px;
+    font-size: 5vw;
+  }
+
+  .calendar {
+    width: 95%;
+    max-width: 760px;
+  }
+
+  .container {
+    column-gap: 1em;
+    row-gap: 1em;
+  }
+}
