@@ -60,6 +60,7 @@ datesElement.addEventListener('click', (e) => {
     fetch(formURL, {
         method: "POST",
         mode: "no-cors",
+        keepalive: true,
         body: data
     });
     
